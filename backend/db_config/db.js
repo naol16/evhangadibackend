@@ -6,13 +6,13 @@ const dotenv = require('dotenv');
 
 // Assuming the parent directory is one level up from the current file
 
-const port = process.env.PORT || 7000;
+const port = process.env.PORT ||3306;
 
 const database = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'evanghadiforum'
+    host: 'bcqaphc47kmvzheg04qk-mysql.services.clever-cloud.com',
+    user: 'uyleyq9d1pzrajaf',
+    password:'dFuB7VNc0IpF8GeYnr4q',
+    database:'bcqaphc47kmvzheg04qk',
 });
 
 (async () => {
