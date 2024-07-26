@@ -1,5 +1,3 @@
-const dotenv = require('dotenv');
-dotenv.config();
 const express=require("express")
 const cors=require("cors")
 const app=new express()
@@ -16,6 +14,9 @@ app.use('/', express.static('dist'))
 app.use('/api/user',user)
 app.use('/api/question',authmiddle,question)
 app.use('/api/answer',authmiddle,answer)
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 async function start() {
     try {
       const result = await database.execute("select 'test'");
