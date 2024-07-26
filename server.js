@@ -11,6 +11,7 @@ const answer= require("./routes/answer")
 const database=require("./db_config/db")
 app.use(express.json())
 app.use(cors())
+app.use('/', express.static('dist'))
 
 app.use('/api/user',user)
 app.use('/api/question',authmiddle,question)
