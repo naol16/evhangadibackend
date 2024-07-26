@@ -6,7 +6,7 @@ const dotenv = require('dotenv');
 
 // Assuming the parent directory is one level up from the current file
 
-const port = process.env.PORT ||3306;
+const port = 3306;
 
 const database = mysql.createPool({
     host: 'bcqaphc47kmvzheg04qk-mysql.services.clever-cloud.com',
