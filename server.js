@@ -3,7 +3,7 @@ dotenv.config();
 const express=require("express")
 const cors=require("cors")
 const app=new express()
-const port= process.env.port || 6214
+const port= process.env.port
 const user=require("./routes/user")
 const question=require("./routes/question")
 const authmiddle=require("./middleware/authmiddleware")
