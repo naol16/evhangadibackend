@@ -1,7 +1,7 @@
 const express=require("express")
 const cors=require("cors")
-const app=new express()
-const port= process.env.port
+const app=express()
+const port= process.env.PORT|| 6214
 const user=require("./routes/user")
 const question=require("./routes/question")
 const authmiddle=require("./middleware/authmiddleware")
